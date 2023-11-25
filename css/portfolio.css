@@ -1,0 +1,917 @@
+/* 
+========================================================================================
+                        Start Root
+========================================================================================
+*/
+:root {
+    /* #28eee7 */
+    /* #33d1cc */
+    /* #35dad4  */
+    /* #084447  */
+    /* ##19283f */
+    --dark-color:#293241;
+    --green-color:#35dad4;
+    --red-color:#ff3150;
+    --yellow-color:#ffae00;
+    --grey-color:#ecf0f2;
+}
+/* 
+========================================================================================
+                        End Root
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start body
+========================================================================================
+*/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+} */
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+/* 
+========================================================================================
+                        End Body
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start NaVBar
+========================================================================================
+*/
+/* علشان عمل معايا مشاكل ف الموقع class(sticky-top) بدل ال position fixed استخدمت ال  */
+/* .navbar{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+} */
+/* هو الحل الامثل position fixed ف كان ال  */
+
+.navbar{
+    /* حتة حناكة مني */
+    top: 0;
+    z-index: 2;
+    /* --------- */
+    /* background-color:#023047; */
+    /* background-color:#003049; */
+    /* background-color: #14213d; */
+    /* background-color: #293241; */
+    /* background-image: linear-gradient(to right ,#152c36,#203A43,#2C5364); */
+    background-image: linear-gradient(to right ,#141E30,#243B55);
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 16px;
+}
+.navbar .navbar-nav .nav-link .active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .container .logo-nav{
+    width: 103px;
+    box-shadow: 8px 5px ;
+    transition: .6s ease;
+}
+.navbar .container .navbar-brand img{
+    filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(156%) hue-rotate(316deg) brightness(119%) contrast(100%);
+    /* filter: brightness(0) saturate(100%) invert(69%) sepia(85%) saturate(374%) hue-rotate(123deg) brightness(94%) contrast(89%); */
+    /* filter: brightness(0) saturate(100%) invert(69%) sepia(11%) saturate(6016%) hue-rotate(1deg) brightness(104%) contrast(104%); */
+} 
+.navbar .container .navbar-brand:hover img{
+    /* filter: brightness(0) saturate(100%) invert(76%) sepia(90%) saturate(375%) hue-rotate(114deg) brightness(86%) contrast(88%); */
+    /* filter: brightness(0) saturate(100%) invert(93%) sepia(67%) saturate(4697%) hue-rotate(122deg) brightness(100%) contrast(87%); */
+    filter: brightness(0) saturate(100%) invert(69%) sepia(85%) saturate(374%) hue-rotate(123deg) brightness(94%) contrast(89%);
+}
+.navbar .search {
+    border-left: 1px solid var(--green-color) ;
+}
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .container .navbar-toggler{
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+.navbar .container .navbar-toggler:focus{
+    box-shadow:none;
+}
+.navbar .container .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+/* 
+========================================================================================
+                        End NaVBar
+========================================================================================  
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Landing
+========================================================================================  
+*/
+.landing {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 78.34px );
+}
+.slide1{
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.412)),url("../img/landing2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slide2{
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.479)),url("../img/appart2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slide3{
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.412),rgba(0, 0, 0, 0.412)),url("../img/firm3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.landing .text h1{
+    font-size:2.5rem;
+}
+.landing .text h1 span{
+    font-size: 4.5rem;
+
+}
+.tntn{
+    color: white;
+    /* color: var(--green-color); */
+    /* color: var(--yellow-color); */
+}
+/* 
+========================================================================================
+                        End Landing
+========================================================================================  
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Properties
+========================================================================================  
+*/
+.properties .container .text2 h6{
+    word-spacing: 2px;
+    font-size: 40px;
+}
+.properties .container .text2 p{
+    font-weight: 300;
+    font-size: 17px ;
+}
+
+.properties .container .row .box img{
+    width: 100%;
+    height: 280px; 
+}
+
+.properties .box h4{
+    background-image: linear-gradient(to right ,#141E30,#243B55);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.img-zoom{
+    position: relative;
+    overflow: hidden;
+}
+.properties .box .img-zoom img{
+    transition: .7s all ease;
+}
+
+.properties .container .row .col-lg-4 .box:hover img{
+    transform: scale(1.03,1.03);
+}
+
+.properties .box span{
+    font-size: 19px;
+    font-weight: 500;
+}
+.properties .box span strong{
+    font-weight: 900;
+    color: rgb(40, 189, 3);
+}
+/* 
+========================================================================================
+                        End Properties
+========================================================================================  
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start About
+========================================================================================  
+*/
+.about{
+    background-image:linear-gradient(#2932417d,#29324178),url("../img/houses.jpg");
+    /* box-shadow: 0px 0px 10px black; */
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about .container .text3 h3{
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 1px 2px 2px black;
+}
+.container .ico{
+    margin-top: 40px;
+    /* background-color: #252c39; */
+    /* background-image: linear-gradient(to right ,#152c36,#203A43); */
+    /* background-image: linear-gradient(#141e30,#1c3149); */
+    background-image: linear-gradient(to right ,#141E30,#172636);
+}
+.about .container .ico .row svg{
+    font-size: 50px;
+    color: white;
+    /* color: var(--green-color); */
+}
+.about .container .ico .row h5{
+    font-size: 25px;
+    color: white;
+}
+/* 
+========================================================================================
+                        End About
+========================================================================================  
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Sales
+========================================================================================  
+*/
+.sales .container .text2 h6{
+    word-spacing: 2px;
+    font-size: 40px;
+}
+.sales .container .text2 p{
+    font-weight: 300;
+    font-size: 17px ;
+}
+.sales .container .boxes img{
+    width: 100%;
+    height: 280px; 
+}
+.sales .boxes{
+    overflow: hidden;
+    position: relative;
+} 
+.sales .boxes::before{
+    content: attr(data-work);
+    width:100%;
+    background-color: #16233494;
+    height:100% ;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bolder;
+    font-size: 30px;
+    color: white;
+    transition: .3s ease-in-out;
+    transform: translateY(100%) ;
+}
+.sales .boxes:hover::before{
+    transform: translateY( 0 );
+}
+.sales .row .text4 h4{
+    background-image: linear-gradient(to right ,#141E30,#243B55);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.sales .row .text4 span{
+
+    font-size: 19px;
+    font-weight: 500;
+}
+.sales .row .text4 span strong{
+    font-weight: 900;
+    color: rgb(40, 189, 3);
+}
+/* 
+========================================================================================
+                        End Sales
+========================================================================================  
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Categries
+========================================================================================  
+*/
+.cat{
+    background-image:linear-gradient(#2932417d,#29324185), url("../img/houses.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cat .container .first-row h5{
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+}
+.cat .container .first-row h5 span{
+    font-size: 40px;
+    font-weight: 600;
+}
+.cat .container .first-row p{
+    text-shadow: 2px 2px 3px black;
+    color: rgb(237, 237, 237);
+}
+.cat .container .second-row{
+    background-image: linear-gradient(to right ,#141E30,#122030);
+}
+.cat .container .second-row img{
+    width: 35%;
+    height: 45%;
+    /* filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(87deg) brightness(102%) contrast(103%); */
+}
+.cat .container .second-row .text6 h6{
+    color: white;
+}
+.cat .container .second-row{
+    border-radius: 5px;
+}
+/*  Start ( من مكتبة توب التوب button )*/
+.btn41-43 {
+    padding: 10px;
+    font-weight: 500;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black,1px 1px 2px black;
+}
+.btn-41 {
+    border:solid 3px rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+}
+.btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.btn-41:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+}
+.btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-41:active {
+    top: 2px;
+}
+/*  End ( من مكتبة توب التوب button )  */
+/* 
+========================================================================================
+                        End Categries
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Our Agents
+========================================================================================
+*/
+.agents .container .text7 h6{
+    word-spacing: 2px;
+    font-size: 40px;
+}
+.agents .container .text2 p{
+    font-weight: 300;
+    font-size: 16px;
+}
+.agents .container .row img{
+    width: 100%;
+    height: 290px;
+    transition: .8s ease;
+}
+.agents .container .row .img22{
+    position: relative;
+    overflow: hidden;
+}
+.agents .container .row h6{
+    background-image: linear-gradient(to right ,#141E30,#243B55);
+    color: white;
+}
+.agents .container .row .col-lg-4:hover img{
+    transform: scale(1.1,1.1);
+}
+.ulll{
+    background-color: #0e162d;
+}
+.ulll svg {
+    width: 18px;
+    height: 18px;
+}
+.ulll ul .facebook{
+    background-color: #1877f2;
+}
+.ulll ul .facebook:hover{
+    background-color:#1876f2be;
+}
+.ulll ul .twitter{
+    background-color: #1da1f2;
+}
+.ulll ul .twitter:hover{
+    background-color: #1da1f2be;
+}
+.ulll ul .linked{
+    background-color: #0a66c2 ;
+}
+.ulll ul .linked:hover{
+    background-color: #0a66c2be ;
+}
+.ulll{
+    background-color: #0e162d;
+}
+/* 
+========================================================================================
+                        End Our Agents
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Contact
+========================================================================================
+*/
+.contact .container-fluid .row .text-right{
+    background-color: #141E30;
+}
+.contact .container-fluid .row .text-right h6{
+    font-size: 45px;
+    font-weight: 500;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+.contact .container-fluid .row .text-right p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgb(215, 215, 215);
+    font-weight: 300;
+}
+.contact .text-right input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    letter-spacing: 1px;
+}
+.contact .text-right input[type="email"]:focus{
+    outline: none;
+}
+.contact .text-right input::placeholder{
+    color: white;
+}
+.contact .text-right button{
+    color: white;
+    background-color: #309ac4;
+    width: fit-content;
+    outline: none;
+    border: none;
+    transition: .5s ;
+}
+.contact .text-right button:hover {
+    background-color: #3099c2d2;
+}
+/* 
+========================================================================================
+                        End Contact
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Footer
+========================================================================================
+*/
+footer .media ul li a{
+    width: 40px;
+    height: 40px;
+}
+footer .media ul li a{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+footer .media ul .one-i a{
+    background-color: #1876f2;
+}
+footer .media ul .two-i a{
+    background-color: #1da1f2;
+}
+footer .media ul .third-i a{
+    background-color: #e1306c;
+}
+footer .media ul .four-i a{
+    background-color: #0a66c2;
+}
+footer .link-one a{
+    text-decoration: none;
+}
+footer .link-two a{
+    text-decoration: none;
+}
+
+/* 
+========================================================================================
+                        End Footer
+========================================================================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+
+                    الـجـزء الـخـاص بالبيدجـات الفرعية
+
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+
+*/
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start about-page
+========================================================================================
+*/
+/* start landing-part */
+.landing-about {
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.47)), url("../img/landing6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 35vh;
+    margin: 0;
+    padding: 0;
+}
+.landing-about h3{
+    font-size: 60px;
+    font-weight: 500;
+}
+.landing-about p{
+    font-size: 18px;
+    font-weight: 300;
+    word-spacing: 2.5px;
+}
+/* end landing-part */
+
+
+/* start firm-part */
+.firm .row .first-grid .map{
+    width: 100%;
+    height: 400px;
+}
+.firm .row .second-grid img{
+    width: 100%;
+    height: 400px;
+}
+.firm .container .row .second-grid h5{
+    background-image: linear-gradient(to right ,#141E30,#243B55);
+}
+.firm .container .row .first-grid h5{
+    font-size: 40px;
+    font-weight: 500;
+}
+.firm .container .row .first-grid h5 span{
+    letter-spacing: 2.5px
+}
+
+
+/*  Start ( من مكتبة توب التوب button )*/
+.firm .btn41-43 {
+    padding: 10px;
+    font-weight: 500;
+    background: rgb(49, 82, 118);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing:1.9px ;
+}
+.firm .btn-41 {
+    z-index: 1;
+    color: white;
+}
+.firm .btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background-image: linear-gradient(to right ,#1e2b42,#243B55);
+    transition: all 0.3s ease;
+}
+.firm .btn-41:hover {
+    color: white;
+    text-shadow: none;
+}
+.firm .btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.firm .btn-41:active {
+    top: 2px;
+}
+/*  End ( من مكتبة توب التوب button )  */
+
+
+/* end firm-part */
+/* 
+========================================================================================
+                        End about-page
+========================================================================================
+*/
+
+
+
+
+
+
+/* 
+========================================================================================
+                        Start Contact-Page
+========================================================================================
+*/
+.get-in-touch .text h5{
+    font-size: 35px;
+    font-weight: 500;
+}
+.get-in-touch .second-row .text-area textarea{
+    min-width:100%;
+}
+.form-group .form-control{
+border-radius: 5px;         /*  معقولة ال 5 بيكسل */
+height: 48px;                       
+font-size: 16px;
+}
+.form-group textarea{
+    height: 100% !important;     /* طلعت عيني علي ماجبتها من علي النت مهمة جداً جداً */
+}
+.form-control{
+    width: 100%;           /* حتة حناكة مني*/
+    line-height: 1.5;      /*لازم الفرق بين السطور يكون كبير سيكا ف عملت كدة */
+    color: #212529;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+/*  Start ( من مكتبة توب التوب button )*/
+.get-in-touch .btn41-43 {
+    padding: 10px;
+    font-weight: 500;
+    background: #314f70;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing:1.9px ;
+}
+.get-in-touch .btn-41 {
+    z-index: 1;
+    color: white;
+}
+.get-in-touch .btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background-image: linear-gradient(to right ,#1e2b42,#243B55);
+    transition: all 0.3s ease;
+}
+.get-in-touch .btn-41:hover {
+    color: white;
+    text-shadow: none;
+}
+.get-in-touch .btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.get-in-touch .btn-41:active {
+    top: 2px;
+}
+/*  End ( من مكتبة توب التوب button )  */
+/* 
+========================================================================================
+                        EndContact-Page
+========================================================================================
+*/
+
